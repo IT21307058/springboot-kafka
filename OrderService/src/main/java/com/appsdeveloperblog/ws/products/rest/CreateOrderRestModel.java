@@ -1,16 +1,12 @@
-package com.appsdeveloperblog.ws.core;
+package com.appsdeveloperblog.ws.products.rest;
 
-public class CartItemAddedEvent {
+public class CreateOrderRestModel {
     private String cartId;
     private String userId;
     private String productId;
     private int quantity;
 
-    public CartItemAddedEvent(){
-
-    }
-
-    public CartItemAddedEvent(String cartId, String userId, String productId, int quantity) {
+    public CreateOrderRestModel(String cartId, String userId, String productId, int quantity) {
         this.cartId = cartId;
         this.userId = userId;
         this.productId = productId;
